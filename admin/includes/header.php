@@ -1,3 +1,5 @@
+<?php include("init.php")  // ob_start exists in new_config.php?>
+
 <!DOCTYPE html>
 <html lang="en">
 
