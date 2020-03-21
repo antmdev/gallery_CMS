@@ -22,11 +22,19 @@
 // //************************************************************************* 
 
 
-                    $user = new User(); //istantiate the class (from user.php) so we can use the method
-                    $result_set = $user->find_all_users();
+// $user = new User(); //istantiate the class (from user.php) so we can use the method
+//CHanged to static method so not required
+
+
+                    $result_set = User::find_all_users();
                     while ($row = mysqli_fetch_array($result_set)) {
-                    echo $row['username'] . "<br>";
+                        echo $row['username'] . "<br>";
                     }
+
+                    $found_user = User::find_user_by_id(2);
+                
+                    echo $found_user['last_name'];
+                    
 
                 ?>
 
