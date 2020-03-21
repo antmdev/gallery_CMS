@@ -17,7 +17,7 @@
                         <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="/phpmyadmin/">DB</a>
+                        <a href="/phpmyadmin/" target="_blank">DB</a>
                     </li>
                     <li>
                         <a href="/gallery_oop/admin/">Admin</a>
