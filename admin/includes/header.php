@@ -1,4 +1,5 @@
-<?php include("init.php")  // ob_start exists in new_config.php?>
+<?php require_once("init.php")  // ob_start exists in new_config.php?>
+<?php if(!$session->is_signed_in()){redirect("login.php");} //if user isnt logged in retrun them to login?>
 
 <!DOCTYPE html>
 <html lang="en">
